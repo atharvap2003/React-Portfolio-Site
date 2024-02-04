@@ -16,7 +16,7 @@ const App = () => {
     <div>
       <header className="l-header">
         <nav className="nav bd-grid">
-          <div className="nav__toggle" onClick={()=> setOpen(!open)}>
+          <div className="nav__toggle" onClick={() => setOpen(!open)}>
             <FiMenu className="nav_icon" />
           </div>
           <div>
@@ -28,33 +28,35 @@ const App = () => {
               <i className="bx bx-x"></i>
             </div>
 
-            {open && (<ul className="nav__list">
-              <li className="nav__item">
-                <a href="#home" className="nav__link">
-                  Home
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#about" className="nav__link">
-                  About
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#services" className="nav__link">
-                  Service
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#" className="nav__link">
-                  Works
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#contact" className="nav__link">
-                  Contact
-                </a>
-              </li>
-            </ul>)}
+            {open && (
+              <ul className="nav__list">
+                <li className="nav__item">
+                  <a href="#home" className="nav__link">
+                    Home
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a href="#about" className="nav__link">
+                    About
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a href="#services" className="nav__link">
+                    Service
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a href="#" className="nav__link">
+                    Works
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a href="#contact" className="nav__link">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            )}
           </div>
         </nav>
       </header>
@@ -64,7 +66,7 @@ const App = () => {
           <div className="home__container bd-grid">
             <div className="home__data">
               <div className="home__img">
-                <img src="./assets/img-2.png" alt="" />
+                <img src="assets/img-2.png" alt="" />
               </div>
 
               <h1 className="home__title">Atharva Pandharikar</h1>
