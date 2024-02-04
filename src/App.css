@@ -48,7 +48,7 @@
   box-sizing: border-box;
 }
 html {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 body {
   margin: var(--header-height) 0 0 0;
@@ -89,7 +89,6 @@ img {
   /* transition: ; */
 }
 
-
 /* class css */
 .section {
   padding: 4rem 0 2rem;
@@ -126,7 +125,6 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--first-color-lighten);
-  
 }
 /*  Nav */
 .nav {
@@ -180,27 +178,19 @@ img {
   font-size: 1.3rem;
   cursor: pointer;
 }
-.nav_icon{
+.nav_icon {
   margin-top: 1rem;
   font-size: 1.5rem;
 }
-
-
-
 
 /* Class name which will apply: */
 .nav__menu.show {
   left: 0%;
 }
 
-.active{
+.active {
   color: var(--text-color);
 }
-
-
-
-
-
 
 /* Home */
 .home__container {
@@ -270,6 +260,8 @@ img {
 
 .about__description {
   margin-bottom: var(--mb-4);
+  margin: 0 2%;
+  text-align: center;
 }
 
 .about__img {
@@ -360,10 +352,9 @@ img {
   color: var(--first-color-lighten);
 }
 
-.services_icon{
+.services_icon {
   font-size: 2rem;
-  margin: .25rem;
-
+  margin: 0.25rem;
 }
 
 /* Works:: */
@@ -573,7 +564,6 @@ img {
     left: 0;
   }
 
-  
   .home__container {
     height: 100vh;
   }
@@ -591,12 +581,11 @@ img {
   }
 }
 
-
 @media screen and (max-width: 768px) {
-  #nav-menu{
+  #nav-menu {
     opacity: 90%;
   }
-  .nav__item a{
+  .nav__item a {
     color: #1f0b06;
     font-size: 17px;
   }

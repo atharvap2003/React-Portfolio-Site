@@ -3,7 +3,13 @@ import "./App.css";
 
 // react -icons
 import { IoLogoInstagram } from "react-icons/io5";
-import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa6";
 import { FiMenu } from "react-icons/fi";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { FaUserEdit } from "react-icons/fa";
@@ -17,46 +23,42 @@ const App = () => {
       <header className="l-header">
         <nav className="nav bd-grid">
           <div className="nav__toggle" onClick={() => setOpen(!open)}>
-            <FiMenu className="nav_icon" />
+            {/* <FiMenu className="nav_icon" /> */}
           </div>
-          <div>
-            <IoSunnyOutline className="nav_icon" />
-          </div>
+          <div>{/* <IoSunnyOutline className="nav_icon" /> */}</div>
 
           <div className="nav__menu" id="nav-menu">
             <div className="nav__close" id="nav-close">
               <i className="bx bx-x"></i>
             </div>
 
-            {open && (
-              <ul className="nav__list">
-                <li className="nav__item">
-                  <a href="#home" className="nav__link">
-                    Home
-                  </a>
-                </li>
-                <li className="nav__item">
-                  <a href="#about" className="nav__link">
-                    About
-                  </a>
-                </li>
-                <li className="nav__item">
-                  <a href="#services" className="nav__link">
-                    Service
-                  </a>
-                </li>
-                <li className="nav__item">
-                  <a href="#" className="nav__link">
-                    Works
-                  </a>
-                </li>
-                <li className="nav__item">
-                  <a href="#contact" className="nav__link">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            )}
+            <ul className="nav__list">
+              <li className="nav__item">
+                <a href="#home" className="nav__link">
+                  Home
+                </a>
+              </li>
+              <li className="nav__item">
+                <a href="#about" className="nav__link">
+                  About
+                </a>
+              </li>
+              <li className="nav__item">
+                <a href="#services" className="nav__link">
+                  Service
+                </a>
+              </li>
+              <li className="nav__item">
+                <a href="#" className="nav__link">
+                  Works
+                </a>
+              </li>
+              <li className="nav__item">
+                <a href="#contact" className="nav__link">
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
         </nav>
       </header>
@@ -65,9 +67,8 @@ const App = () => {
         <section className="home" id="home">
           <div className="home__container bd-grid">
             <div className="home__data">
-              <div className="home__img">
-                <img src="assets/img-2.png" alt="" />
-              </div>
+              <div className="home__img"></div>
+              <img src="./assets/img-2.png" alt="img" />
 
               <h1 className="home__title">Atharva Pandharikar</h1>
               <span className="home__profession">Frontend Developer</span>
@@ -148,7 +149,7 @@ const App = () => {
             </div>
             <div className="services__content">
               <TbWritingSign className="services_icon" />
-              <h3 className="services__title">Content-Writing</h3>
+              <h3 className="services__title">UI/UX</h3>
               <p className="services__description">
                 Creating intuitive interfaces and captivating user experiences
                 that blend aesthetics with functionality, ensuring engagement
@@ -270,13 +271,13 @@ const App = () => {
 
           <div className="footer__socials">
             <a href="#" className="footer__links">
-              <i className="bx bxl-facebook"></i>
+              <FaLinkedinIn />
             </a>
             <a href="#" className="footer__links">
-              <i className="bx bxl-instagram"></i>
+              <FaInstagram />
             </a>
             <a href="#" className="footer__links">
-              <i className="bx bxl-twitter"></i>
+              <FaTwitter />
             </a>
           </div>
 
